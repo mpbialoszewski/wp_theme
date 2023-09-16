@@ -9,7 +9,25 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seven Living</title>
+    <title><?php echo get_bloginfo('name') ?></title>
+
+
+    <div class="header-container">
+    <div id='header-logo'>
+        <?php
+        if(function_exists('custom_logo')){
+            $custom_logo_id = get_theme_mod('custom_logo');
+            $logo = wp_get_attachment_image_src($custom_logo_id);
+
+            }
+        ?>
+            <img src="<?php echo $logo[0] ?>" alt='logo'>
+      <div class="header-welcome">
+          <h1>Coming Soon</h1>
+      </div>
+  </div>
+
+</div>
 
     <?php
         wp_head(  );
