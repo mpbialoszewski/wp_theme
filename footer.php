@@ -1,20 +1,22 @@
-<footer>
-      <h2>Footer</h2>
-
-      <div class='contact-information'>
-            <div class='contact-phone'>
-                <i class="fa fa-phone"></i> 0121 468 3264
-            </div>
-        
-            <div class='contact-email'>
-                <i class="fa fa-envelope"></i> hello@sevenliving.com
-            </div>
-
-            <div class='contact-address'>
-                <i class="fa fa-map-marker"></i> 97 Park Lane, London, W1K 7TG
-            </div>
+    <footer>
+      
+      
+      <div class="footer-container">
+      <div class="footer-title">
+      © SevenLiving 2020
+      </div>
+        <div class="footer-social">
+          <button formaction="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook" href="www.facebook.com"></i>
+          </button>
+          <button>
+            <i class="fa-brands fa-twitter"></i>
+          </button>
+          <button>
+            <i class="fa-brands fa-instagram"></i>
+          </button>
         </div>
-
+   
 <?php
 
     wp_footer(  );
